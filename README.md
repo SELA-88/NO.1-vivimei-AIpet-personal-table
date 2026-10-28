@@ -9,13 +9,22 @@
 
 - 桌面AI宠物自主活动、点击互动、拖动、落地与用户可操控活动（wasd按键，电脑底部+左右屏幕侧边可吸附）。
 - 7 种心情情绪记录与每日/周/月情绪统计（左键长按桌宠3秒以上后并使用鼠标滚轮即可出现）。
+- <img width="219" height="225" alt="image" src="https://github.com/user-attachments/assets/86871c05-4135-4885-b11f-00685985935d" />
 - 待办清单、想法速记、公告栏与桌宠啥子聊天室与复盘总结的一体化工作台（双击桌宠即可打开）。
-- 可配置API兼容接口的桌宠聊天与复盘总结。
+- 可配置API兼容接口的简易/工作台桌宠聊天与复盘总结。
 - ddl提醒、免打扰和个人工作台数据均保存在本地。
-- 对女性用户可自主记录月经第一天的标志来告诉自己月经时间（防忘）。
+- 对女性用户可自主记录月经第一天的标志来告诉自己月经时间（防忘）。男性/未知性别用户则不会出现月经标志。
 - 右键单击设置可自定义桌宠大小、开启与否键盘操控、开启与否自由行动、性别、跌落设置与API余额详情。
 - PS：其实工作台的界面大小调成屏幕的1/4or1/3的话会比较好看齁（我自己就是差不多这个大小来看我的内容的）
-  
+
+## 图片展示
+- 「简易聊天框」例图展示：<img width="420" height="141" alt="image" src="https://github.com/user-attachments/assets/fba1f09b-a1fe-42c2-92e7-107a518fc1c4" />
+- 「待办界面」例图展示：<img width="719" height="626" alt="image" src="https://github.com/user-attachments/assets/1cadbaba-2647-4611-ad73-3990d123e3c2" />
+- 「啥子聊天室」例图展示：<img width="721" height="628" alt="image" src="https://github.com/user-attachments/assets/0caded21-714d-463a-a4c0-5c1a8423d175" />
+- 「想法速记」例图展示：<img width="720" height="669" alt="image" src="https://github.com/user-attachments/assets/eca15b8f-1ffb-4441-b0d8-95542ed73152" />
+- 「复盘总结」例图展示：<img width="722" height="558" alt="image" src="https://github.com/user-attachments/assets/9548fce9-89d5-419a-9203-a8613cde2526" />
+- 「公告栏」例图展示：<img width="720" height="556" alt="image" src="https://github.com/user-attachments/assets/44dab471-808d-4232-b520-3fdd79250a2d" />
+
 ## 环境要求
 
 - macOS 13 或更高版本
@@ -80,4 +89,5 @@ python tools/build_clean_release.py
 
 ## 授权与致谢
 
-非常感谢 [OTAXIO/digit_maid](https://github.com/OTAXIO/digit_maid) 项目提供的素材参考（老大做的真好真可爱太喜欢了）。同时非常感谢yanstu和254558张帅老师的（https://github.com/yanstu/animal-island-ui-vue）组件，太可爱了喜欢！在这个大开源时代里活着真的是太好了（泪）。原始角色美术和素材版权归各自权利方所有。本仓库仅用于个人、非商业的桌宠+工作台功能的使用，不是 Codex、OpenAI 或游戏官方素材发布。
+非常感谢 [OTAXIO/digit_maid](https://github.com/OTAXIO/digit_maid) 项目提供的素材参考（老大做的真好真可爱太喜欢了）。同时非常感谢[yanstu/animal-island-ui-vue](https://github.com/yanstu/animal-island-ui-vue)组件，太可爱了喜欢！
+在这个大开源时代里活着真的是太好了（泪）。原始角色美术和素材版权归各自权利方所有。本仓库仅用于个人、非商业的桌宠+工作台功能的使用，不是 Codex、OpenAI 或游戏官方素材发布。
