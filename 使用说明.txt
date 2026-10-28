@@ -1,0 +1,44 @@
+维维美桌面宠物｜使用说明
+
+一、启动
+1. 首次使用：双击“安装依赖.app”。
+2. 日常使用：双击“启动桌宠.app”。
+
+二、基本操作
+- 单击桌宠：随机动作。
+- 拖动桌宠：移动或落地。
+- 左键按住 3 秒后滚轮：打开 7 个表情。
+- 双击桌宠：打开工作台。
+- 右键单击：设置或关闭维维美。
+- 右键双击：简易聊天。
+
+三、工作台
+包含待办清单、啥子聊天室、想法速记和复盘总结。
+复盘只展示情绪统计和待办完成情况，不生成建议。
+
+四、用户数据
+以下内容不要删除：
+- data/settings.json
+- data/chat_history/
+- data/chat_memory/
+- data/emotion_history/
+- data/workbench_data/
+
+五、运行文件
+- main.py：应用入口。
+- workbench/index.html：工作台页面。
+- vivimei/maid_animations.yaml：动作配置。
+- assets/app_icon.icns：应用图标。
+- vivimei/：桌宠、聊天、工作台、情绪和提醒等运行代码。
+- assets/动作/：桌宠 GIF。
+- assets/图片/：聊天与情绪头像。
+- 启动桌宠.app / 安装依赖.app：启动与安装。
+
+六、隐私
+聊天内容会在你配置 DeepSeek API 后发送到 DeepSeek。
+源码仓库中的 API 配置均为占位符 XXXXXXXXXXXXXXXXXXX / XXXXXXXXXX / XXXXXXXXXX。
+请只在你自己的本地副本中于 vivimei/oc.py 填入 API Key、DEEPSEEK_BASE_URL 和 DEEPSEEK_MODEL。
+不要分享填写后的文件。
+data 目录中的聊天、情绪和工作台内容都是本地个人数据，且已被 .gitignore 排除。
+七、运行要求
+macOS、Python 3.12、requirements.txt 中的依赖。

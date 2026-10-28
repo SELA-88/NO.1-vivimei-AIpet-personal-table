@@ -1,0 +1,16 @@
+#!/bin/zsh
+set -u
+
+PROJECT_DIR="$(cd "$(dirname "$0")/../../.." && pwd)"
+PYTHON="$PROJECT_DIR/.venv/bin/python"
+LOG_FILE="${TMPDIR:-/tmp}/维维美运行.log"
+
+if [ ! -x "$PYTHON" ]; then
+    osascript -e 'display alert "还没有安装依赖" message "请先双击项目中的“安装依赖.app”。" as critical'
+    exit 1
+fi
+
+cd "$PROJECT_DIR"
+# Keep Python as the bundle's main process so macOS does not report the
+# launcher shell itself as an application that exited unexpectedly.
+exec "$PYTHON" -B -u "$PROJECT_DIR/main.py" >>"$LOG_FILE" 2>&1

@@ -1,0 +1,30 @@
+# macOS 系统与文件元数据
+.DS_Store
+._*
+
+# Python 虚拟环境与缓存
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 本地个人数据：聊天、记忆、情绪和工作台内容
+data/
+
+# 构建与发布产物
+release/
+build/
+dist/
+*.zip
+
+# 本地运行文件与日志
+.vivimei.lock
+*.log
+
+# 本地环境变量与密钥
+.env
+.env.*
+*.pem
+*.key

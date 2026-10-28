@@ -1,0 +1,35 @@
+# 桌宠动作配置
+# fall_mode: smooth=缓降飘落，direct=快速直落，none=不下坠
+# idle_mode: default=默认，sport=运动，lazy=懒惰
+# floor_margin: 桌宠底部距离屏幕底边的像素
+# system_idle_seconds: 电脑无操作多久后进入睡觉动作
+
+base_dir: assets/动作
+fall_mode: smooth
+idle_mode: default
+smooth_fall: true
+floor_margin: 20
+system_idle_seconds: 300
+click_pool: interact.gif, die.gif, sweat.gif, special.gif, special1.gif, sit.gif, jump.gif
+
+actions:
+  idle: relax.gif
+  interact: interact.gif
+  move: move.gif
+  sweat: sweat.gif
+  fly: fly.gif
+  sit: sit.gif
+  sleep: sleep.gif
+  start: start.gif
+  hide: hide.gif
+
+loops:
+  idle: true
+  interact: false
+  move: true
+  sweat: true
+  fly: true
+  sit: true
+  sleep: true
+  start: false
+  hide: true

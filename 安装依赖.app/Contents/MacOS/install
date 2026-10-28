@@ -1,0 +1,33 @@
+#!/bin/zsh
+set -u
+
+PROJECT_DIR="$(cd "$(dirname "$0")/../../.." && pwd)"
+LOG_FILE="${TMPDIR:-/tmp}/维维美安装.log"
+cd "$PROJECT_DIR" || exit 1
+
+if [ -x "$HOME/.local/bin/python3.12" ]; then
+    PYTHON="$HOME/.local/bin/python3.12"
+else
+    PYTHON="$(command -v python3)"
+fi
+
+if [ -z "$PYTHON" ] || [ ! -x "$PYTHON" ]; then
+    osascript -e 'display alert "没有找到 Python 3" message "请先安装 Python 3.12，然后重新运行。安装地址：https://www.python.org/downloads/" as critical'
+    exit 1
+fi
+
+{
+    if [ ! -x ".venv/bin/python" ]; then
+        "$PYTHON" -m venv .venv
+    fi
+    .venv/bin/python -m pip install -r requirements.txt
+} >"$LOG_FILE" 2>&1
+
+STATUS=$?
+if [ "$STATUS" -eq 0 ]; then
+    osascript -e 'display alert "安装完成" message "现在可以双击“启动桌宠.app”。"'
+else
+    osascript -e "display alert \"安装失败\" message \"错误信息已写入：$LOG_FILE\" as critical"
+fi
+
+exit "$STATUS"
