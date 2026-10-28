@@ -19,6 +19,7 @@ MODEL_PLACEHOLDER = "XXXXXXXXXX"
 COPY_ITEMS = (
     "assets",
     "main.py",
+    "README.md",
     "oc.py",
     "requirements.txt",
     "vivimei",

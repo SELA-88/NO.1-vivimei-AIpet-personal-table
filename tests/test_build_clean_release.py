@@ -33,6 +33,7 @@ class BuildCleanReleaseTests(unittest.TestCase):
                 )
 
             (source / "main.py").write_text("print('ok')\n", encoding="utf-8")
+            (source / "README.md").write_text("# Test project\n", encoding="utf-8")
             (source / "assets").mkdir()
             (source / "assets" / "app_icon.icns").write_bytes(b"icon")
             launcher = source / "启动桌宠.app" / "Contents" / "MacOS" / "launch"
@@ -108,6 +109,10 @@ class BuildCleanReleaseTests(unittest.TestCase):
             self.assertFalse((release / ".DS_Store").exists())
             self.assertFalse((release / ".vivimei.lock").exists())
             self.assertTrue((release / "main.py").is_file())
+            self.assertEqual(
+                "# Test project\n",
+                (release / "README.md").read_text(encoding="utf-8"),
+            )
             self.assertTrue(
                 (release / "启动桌宠.app" / "Contents" / "MacOS" / "launch").is_file()
             )

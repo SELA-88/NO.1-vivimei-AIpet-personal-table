@@ -1,4 +1,4 @@
-# NO.1 Vivimei Pet Personal Work Table
+# 维维美桌宠/个人工作台 v0.1.0
 
 作者述：首先谢谢你看到我的作品，作为一个目前不会代码的小白，这是我第一个接触使用agent（前期workbuddy，中后期codex+deepseek）做出来的作品，主要是给自己用作经验积累和作品集以及日常生活陪伴用的！其实做的不是很完美，但是总要有个不完美的开头才能让后面做新作品更有动力吧！
 这是一个面向 macOS 的桌面智能宠物与个人工作台，使用 Python、PyQt6 和 Qt WebEngine 构建。（之后再看会不会做win版的）然后由于本人也特别喜欢动森美学，所以工作台自己手搓前端排版设计了！但是我的agent好像不太听话，做出来的效果不是特别好（泪）只能尽可能做成现在的样子了。部分交互也不是很满意，不过先做一版！
@@ -89,5 +89,4 @@ python tools/build_clean_release.py
 
 ## 授权与致谢
 
-非常感谢 [OTAXIO/digit_maid](https://github.com/OTAXIO/digit_maid) 项目提供的素材参考（老大做的真好真可爱太喜欢了）。同时非常感谢[yanstu/animal-island-ui-vue](https://github.com/yanstu/animal-island-ui-vue)组件，太可爱了喜欢！
-在这个大开源时代里活着真的是太好了（泪）。原始角色美术和素材版权归各自权利方所有。本仓库仅用于个人、非商业的桌宠+工作台功能的使用，不是 Codex、OpenAI 或游戏官方素材发布。
+非常感谢 [OTAXIO/digit_maid](https://github.com/OTAXIO/digit_maid) 项目提供的素材参考（老大做的真好真可爱太喜欢了）。同时非常感谢[yanstu/animal-island-ui-vue](https://github.com/yanstu/animal-island-ui-vue)组件，太可爱了喜欢！ 在这个大开源时代里活着真的是太好了（泪）。原始角色美术和素材版权归各自权利方所有。本仓库仅用于个人、非商业的桌宠+工作台功能的使用，不是 Codex、OpenAI 或游戏官方素材发布。
